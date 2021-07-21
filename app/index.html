@@ -1,12 +1,178 @@
 ---
-title: 首頁
+title: Home
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<h1>
-  這是一段話
-</h1>
+<body class="index">
+  <div class="banner">
+    <p class="slogan">Promise-Desert 2020 早春系列<br><span>看得清，才能看得遠</span></p>
+  </div>
 
-<div class="box"></div>
+  <div class="feature">
+    <div class="container">
+      <h2 class="sectitle">用專業的心，做專業的事</h2>
+      <ul class="feature-info d-flex">
+        <li class="d-flex">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-dollar.svg" alt="icon-dollar.svg">
+          <h4>單一價格</h4>
+          <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+        </li>
+        <li class="d-flex">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock.svg" alt="icon-clock.svg">
+          <h4>20 分鐘即可取件</h4>
+          <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+        </li>
+        <li class="d-flex">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-heart.svg" alt="icon-heart.svg">
+          <h4>安心售後服務</h4>
+          <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+        </li>
+        <li class="d-flex">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-glasses.svg" alt="icon-glasses.svg">
+          <h4>關於鏡片</h4>
+          <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="classic">
+    <div class="container">
+      <h2 class="sectitle">經典系列鏡框</h2>
+      <ul class="classic-info d-flex">
+        <li class="d-flex mb-32">
+          <img class="prod" src="https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png"
+            alt="product-1.png">
+          <div class="classic-item1 d-flex">
+            <img class="icon" src="https://upload.cc/i1/2021/07/18/x4XuPO.png" alt="x4XuPO.png">
+            <h3 class="thirdtitle">OPTICAL</h3>
+          </div>
+        </li>
+        <li class="d-flex mb-32">
+          <img class="prod" src="https://hexschool.github.io/webLayoutTraining1st/week3/product-2.png"
+            alt="product-2.png">
+          <div class="classic-item2 d-flex">
+            <img class="icon mr-8" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-sun.svg"
+              alt="icon-sun.svg">
+            <h3 class="thirdtitle">SUNGLASSES</h3>
+          </div>
+        </li>
+        <li class="d-flex">
+          <img class="prod" src="https://hexschool.github.io/webLayoutTraining1st/week3/product-3.png"
+            alt="product-3.png">
+          <div class="classic-item3 d-flex">
+            <img class="icon" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-thunder.svg"
+              alt="icon-thunder.svg">
+            <h3 class="thirdtitle">FUNCTIONAL</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="joint">
+    <div class="container">
+      <h2 class="sectitle">聯名設計鏡框</h2>
+      <div class="joint-info d-flex">
+        <div class="joint-item1">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png" alt="product-8.png">
+          <h3 class="thirdtitle">Double&nbspA+</h3>
+        </div>
+        <div class="joint-item2">
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png" alt="product-9.png">
+          <h3 class="thirdtitle">YOUTH</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="customer">
+    <div class="container">
+      <h2 class="sectitle">顧客推薦</h2>
+      <ul class="customer-info d-flex">
+        <li>
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-1.png" alt="rec-1.png">
+          <ul class="customer-item">
+            <li>
+              <div>
+                <p class="name">Jessy</p>
+                <p class="recommend">眼鏡品質優良，下次還會想來這邊購買！</p>
+              </div>
+              <p class="date">2021/06/20</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-2.png" alt="rec-2.png">
+          <ul class="customer-item">
+            <li>
+              <div>
+                <p class="name">凱倫</p>
+                <p class="recommend">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>  
+              </div>
+              <p class="date">2021/04/18</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-3.png" alt="rec-3.png">
+          <ul class="customer-item">
+            <li>
+              <div>
+                <p class="name">悠悠</p>
+                <p class="recommend">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+              </div>
+              <p class="date">2020/12/25</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <img src="https://hexschool.github.io/webLayoutTraining1st/week3/rec-4.png" alt="rec-4.png">
+          <ul class="customer-item">
+            <li>
+              <div>
+                <p class="name">Kyuan</p>
+                <p class="recommend">服務很好，品質沒有任何問題，非常喜歡。</p>
+              </div>
+              <p class="date">2020/10/31</p>
+            </li>
+          </ul>
+        </li>
+      </ul>  
+    </div>
+  </div>
+
+  <div class="suggest">
+    <div class="container">
+      <form action="" class="d-flex">
+        <h2 class="sectitle">聯絡我們</h2>
+        <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+        <div class="form-group">
+          <label for="person">姓名</label><br>
+          <input type="text" id="person" name="person" placeholder="陳小明">
+        </div>
+        <div class="form-group">
+          <label for="phone">聯絡電話</label><br>
+          <input type="text" id="phone" name="phone" placeholder="0912-345-678">  
+        </div>
+        <div class="form-group">
+          <label for="email">電子郵件</label><br>
+          <input type="email" id="email" name="email" placeholder="example@email.com">  
+        </div>
+        <div class="form-group">
+          <label for="feedback">意見反應</label><br>
+          <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>  
+        </div>
+        <div class="form-group-check d-flex">
+          <input type="checkbox" id="check" name="check">
+          <label for="check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+        </div>
+        <input class="button" type="button" id="button" name="button" value="確認送出">
+      </form>
+    </div>
+  </div>
+
+
+</body>

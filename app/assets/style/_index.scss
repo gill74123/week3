@@ -1,0 +1,415 @@
+.index{
+    .sectitle{
+        font-size: 48px;
+        color: $primary-color;
+        @include pad(){
+            font-size: 32px;
+        }
+        @include phone(){
+            font-size: 24px;
+        }
+    }
+
+    .banner{
+        height: 840px;
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        @include pad(){
+            background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png);
+        }
+        @include phone(){
+            height: 394px;
+            background-position: left;
+        }
+        .slogan{
+            text-align: right;
+            font-size: 36px;
+            color: $primary-color;
+            position: absolute;
+            right: 20%;
+            top: 50%;
+            transform: translateY(-50%);
+            @include pad(){
+                margin-right: 4.5%;
+                right: 0;
+                font-size: 20px;
+            }
+            @include phone(){
+                font-size: 16px;
+            }
+        }
+        span{
+            font-size: 64px;
+            @include pad(){
+                font-size: 48px;
+            }
+            @include phone(){
+                font-size: 32px;
+            }
+        }
+    }
+    
+    .feature{
+        padding: 60px 0 80px 0;
+        background-color: $secondary-color;
+        text-align: center;
+        @include pad(){
+            padding: 40px 0 56px 0;
+        }
+        @include phone(){
+            padding: 32px 0 40px 0;
+        }
+        .sectitle{
+            margin-bottom: 48px;
+            @include phone(){
+                margin-bottom: 28px;
+            }
+        }
+        .feature-info{
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            li{
+                width: 23%;
+                flex-direction: column;
+                align-items: center;
+                @include pad(){
+                    width: 48%;
+                    margin-bottom: 45px;
+                }
+                @include phone(){
+                    width: 98%;
+                }
+            }
+            img{
+                width: 33%;
+                margin-bottom: 24px;
+                @include pad(){
+                    width: 30%;
+                }
+                @include phone(){
+                    width: 25%;
+                }
+            }
+            h4{
+                margin-bottom: 8px;
+                font-size: 24px;
+                color: $primary-color;
+            }
+            p{
+                width: 98%;
+                font-size: 16px;
+                text-align: left;
+                @include pad(){
+                    width: 80%;
+                }
+            }
+        }
+        
+    }
+
+    .classic{
+        padding: 60px 0 80px 0;
+        text-align: center;
+        @include pad(){
+            padding: 40px 0 56px 0;
+        }
+        @include phone(){
+            padding: 32px 0 40px 0;
+        }
+        .sectitle{
+            margin-bottom: 40px;
+            @include phone(){
+                margin-bottom: 28px;
+            }
+        }
+        .classic-info{
+            flex-wrap: wrap;
+            li{
+                width: 100%;
+                align-items: center;
+                @include phone(){
+                    position: relative;
+                }
+            }
+            li:nth-child(2){
+                flex-direction: row-reverse;
+                @include pad(){
+                    flex-direction: row;
+                }
+            }
+        }
+        .prod{
+            width: 60%;
+            @include phone(){
+                width: 100%;
+            }
+        }
+        .classic-item1, .classic-item3{
+            margin-left: 3%;
+            @include pad(){
+                margin-left: 4.5%;
+            }
+        }
+        .classic-item2{
+            margin-right: 3%;
+            @include pad(){
+                margin: 0 0 0 4.5%;
+            }
+        }
+        .classic-item1, .classic-item2, .classic-item3{
+            @include phone(){
+                margin: 0;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .icon{
+            width: 48px;
+            margin-right: 3%;
+            @include pad(){
+                width: 40px;
+            }
+        }
+        .thirdtitle{
+            font-size: 48px;
+            color: $primary-color;
+            @include pad(){
+                font-size: 28px;
+            }
+        }
+        .mb-32{
+            margin-bottom: 32px;
+            @include pad(){
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .joint{
+        padding: 60px 0 80px 0;
+        text-align: center;
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/bg.png);
+        background-size: cover;
+        background-position: center;
+        @include pad(){
+            padding: 40px 0 56px 0;
+            background-position: left bottom;
+        }
+        @include phone(){
+            padding: 32px 0 40px 0;
+        }
+        .sectitle{
+            margin-bottom: 40px;
+            color: $white-color;
+            @include pad(){
+                margin-bottom: 32px;
+            }
+            @include phone(){
+                margin-bottom: 20px;
+            }
+        }
+        .joint-info{
+            justify-content: space-between;
+            @include phone(){
+                flex-direction: column;
+            }
+        }
+        .joint-item1, .joint-item2{
+            width: 48.5%;
+            position: relative;
+            @include phone(){
+                width: 100%;
+            }
+        }
+        .joint-item1{
+            @include phone(){
+                margin-bottom: 16px;
+            }
+        }
+        img{
+            opacity: 0.7;
+        }
+        .thirdtitle{
+            font-size: 72px;
+            color: $primary-color;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @include pad(){
+                font-size: 32px;
+            }
+        }
+    }
+
+    .customer{
+        padding: 60px 0 80px 0;
+        @include pad(){
+            padding: 40px 0 56px 0;
+            background-position: left bottom;
+        }
+        @include phone(){
+            padding: 32px 0 40px 0;
+        }
+        .sectitle{
+            margin-bottom: 40px;
+            text-align: center;
+            @include pad(){
+                margin-bottom: 32px;
+            }
+        }
+        .customer-info{
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-radius: 4px 4px 0px 0px;
+            :nth-child(1), :nth-child(2){
+                @include pad(){
+                    margin-bottom: 32px;
+                }
+            }
+            :nth-child(1), :nth-child(2), :nth-child(3){
+                @include phone(){
+                    margin-bottom: 16px;
+                }
+            }
+            > li{
+                width: 24%;
+                box-shadow: 0px 2px 6px #00000029;
+                @include pad(){
+                    width: 48.5%;
+                }
+                @include phone(){
+                    width: 100%;
+                }
+            }
+            
+            img{
+                margin-bottom: 16px;
+                @include pad(){
+                    width: 100%;
+                }
+            }
+        }
+        .customer-item li{
+            width: 87%;
+            margin: 0 auto;
+            color: $black-color;
+            div{
+                height: 160px;
+            }
+            .name{
+                margin-bottom: 8px;
+                font-size: 14px;
+            }
+            .recommend{
+                font-size: 16px;
+            }
+            .date{
+                margin-bottom: 16px;
+                font-size: 14px;
+                color: $gray-color;
+            }
+        }
+        
+    }
+
+    .suggest{
+        padding: 60px 0 80px 0;
+        background-color: $secondary-color;
+        @include pad(){
+            padding: 40px 0 56px 0;
+            background-position: left bottom;
+        }
+        @include phone(){
+            padding: 32px 0 40px 0;
+        }
+        form{
+            width: 65%;
+            margin: 0 auto;
+            flex-direction: column;
+            @include phone(){
+                width: 100%;
+            }
+        }
+        .sectitle{
+            margin-bottom: 24px;
+            text-align: center;
+            color: $black-color;
+            @include phone(){
+                margin-bottom: 20px;
+            }
+        }
+        p{
+            margin-bottom: 20px;
+            font-size: 20px;
+            @include pad(){
+                margin-bottom: 16px;
+                font-size: 16px;
+            }
+            @include phone(){
+                margin-bottom: 8px;
+            }
+        }
+        .form-group{
+            margin-bottom: 16px;
+            @include pad(){
+                margin-bottom: 8px;
+            }
+            label{
+                font-size: 16px;
+                @include pad(){
+                    font-size: 14px;
+                }
+            }
+            input, textarea{
+                width: 100%;
+                background-color: $secondary-color;
+                border: 1px solid #000;
+            }
+            input{
+                padding: 14px 16px;
+                height: 50px;
+                @include pad(){
+                    height: 36px;
+                }
+            }
+        }
+        .form-group-check{
+            margin-bottom: 40px;
+            @include pad(){
+                margin-bottom: 20px;
+            }
+            label{
+                font-size: 16px;
+                @include pad(){
+                    font-size: 14px;
+                } 
+            }
+        }
+        .button{
+            width: 50%;
+            padding: 16px 0;
+            align-self: center;
+            background-color: $primary-color;
+            font-size: 16px;
+            color: $white-color;
+            border: none;
+            cursor: pointer;
+            @include pad(){
+                padding: 10px 0;
+                font-size: 14px;
+            }
+            @include phone(){
+                padding: 8px 0;
+            }
+        }
+        .button:hover{
+            background-color: #650300;
+        }
+    }
+}

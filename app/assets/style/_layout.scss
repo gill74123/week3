@@ -1,0 +1,201 @@
+/*功能型屬性*/
+.d-flex{
+    display: flex;
+}
+
+/*共用屬性*/
+body{
+    line-height: 1.5;
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 4.5%;
+}
+
+/*header-start*/
+.header{
+    padding: 0 4.5%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    @include phone(){
+        flex-direction: column;
+        padding: 0;
+    }
+    .firsttitle a{
+        width: 80px;
+        height: 49px;
+        background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/logo.png");
+        text-indent: 101%;
+        white-space: nowrap;
+        overflow: hidden;
+        @include phone(){
+            margin: 10px 0;
+        }
+    }
+    .navbar{
+        width: 25%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        @include pad(){
+            width: 60%;
+        }
+        @include phone(){
+            width: 100%;
+        }
+        .nav-item{
+            @include phone(){
+                width: 50%;
+                text-align: center;
+                border: 1px solid $white-color;
+            }
+            a{
+                padding: 30px 0;
+                font-size: 20px;
+                color: $white-color;
+                @include phone(){
+                    padding: 8px 0px;
+                }
+            }
+            a:hover{
+                color: sandybrown;
+            }
+        }
+    }
+}
+/*header-end*/
+
+/*footer-start*/
+.footer{
+    padding: 32px 0 39px 0;
+    background-color: $primary-color;
+    color: $white-color;
+    @include pad(){
+        padding: 32px 0;
+    }
+    @include phone(){
+        padding: 24px 0;
+    }
+    .footer-info{
+        padding-bottom: 24px;
+        margin-bottom: 32px;
+        justify-content: space-between;
+        border-bottom: 1px solid $white-color;
+        @include pad(){
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+        @include pad(){
+            padding-bottom: 24px;
+            margin-bottom: 16px;
+        }
+    }
+    .footer-nav{
+        width: 40%;
+        justify-content: space-between;
+        align-items: center;
+        @include pad(){
+            width: 60%;
+        }
+        @include phone(){
+            width: 65%;
+        }
+        .navbar{
+            width: 100%;
+            margin-bottom: 36px;
+            justify-content: space-between;
+            @include pad(){
+                margin-bottom: 18px;
+            }
+            @include phone(){
+                display: none;
+            }
+            a{
+            font-size: 16px;
+            color: $white-color;
+            @include pad(){
+                padding-right: 40px;
+            }
+            }
+        }
+        .navbar a:hover{
+            color: sandybrown;
+        }
+    }
+    img, a{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .contactinfo{
+        .mb-16{
+            margin-bottom: 16px;
+            @include pad(){
+                margin-bottom: 12px;
+            }
+        }
+        img{
+            @include pad(){
+                width: 18px;
+            }
+        }
+        a{
+            margin-left: 5%;
+            font-size: 36px;
+            color: $white-color;
+            @include pad(){
+                font-size: 20px;
+            }
+        }
+        a:hover{
+            color: sandybrown;
+        }
+    }
+    .social{
+        width: 18.5%;
+        justify-content: space-between;
+        @include pad(){
+            width: 13.5%;
+        }
+        @include phone(){
+            width: 35%;
+        }
+    }
+    .social img{
+        @include pad(){
+            width: 24px;
+        }
+    }
+    .social img:hover{
+        transform: rotate(15deg);
+    }
+    .copyright{
+        justify-content: space-between;
+        @include phone(){
+            flex-direction: column;
+        }
+        p{
+            @include phone(){
+                margin-bottom: 8px;
+            }
+        }
+        ul{
+            width: 15.5%;
+            justify-content: space-between;
+            @include pad(){
+                width: 17%;
+            }
+            @include phone(){
+                width: 25%;
+                flex-direction: column;
+            }
+        }
+        li{
+            @include phone(){
+                margin: 0 0 8px 0;
+            }
+        }
+    }
+}
+/*footer-end*/

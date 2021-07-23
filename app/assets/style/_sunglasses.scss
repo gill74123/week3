@@ -1,4 +1,4 @@
-.optical{
+.sunglasses{
     /*topnav*/
     .topnav{
         justify-content: center;
@@ -64,21 +64,22 @@
         }
     }
     .banner-photo-left{
-        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-1.png);
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-3.png);
         @include pad(){
-            background-image: url(../images/banner-1.jpg);
-            background-position: center 70%;
+            background-image: url(../images/banner-3.jpg);
         }
     }
     .banner-photo-right{
-        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-2.png);
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-2-color.png);
+        background-position: center 10%;
         @include pad(){
-            background-image: url(../images/banner-2.jpg);
+            background-image: url(../images/banner-4.jpg);
+            background-position: center 20%;
         }
     }
 
-    /*prod-optical*/
-    .prod-optical{
+    /*prod-sunglasses*/
+    .prod-sunglasses{
         padding: 80px 0 160px 0;
         .sectitle{
             margin-bottom: 40px;
@@ -110,7 +111,7 @@
     }
     .prod-item{
         margin-bottom: 104px;
-        width: 23%;
+        width: 31%;
         @include pad(){
             margin-bottom: 72px;
             width: 48%;
@@ -121,11 +122,7 @@
         }
         img{
             width: 100%;
-        }
-    }
-    .hide-md{
-        @include pad(){
-            display: none;
+            height: 224px;
         }
     }
     .hide-sm{
@@ -167,35 +164,29 @@
         background-color: #B75929;
     }
     .navbutton{
-        justify-content: center;
-        align-items: center;
-        li{
-            border: 1px solid $light-gray;
-        }
-        a{
-            padding: 12px 16px;
-            font-size: 18px;
-            color: $light-gray;
-            @include phone(){
+        display: none;
+        @include phone(){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                border: 1px solid $light-gray;
+            }
+            a{
                 padding: 12px 15px;
                 font-size: 16px;
+                color: $light-gray;
             }
-        }
-        a:hover{
-            background-color: $black;
-            color: $white;
-        }
-        .previouspage, .nextpage{
-            @include phone(){
+            a:hover{
+                background-color: $black;
+                color: $white;
+            }
+            .previouspage, .nextpage{
                 padding: 12px 10px;
             }
+            .nextpage{
+                background-color: #F2F2F2;
+            }
         }
-        .nextpage{
-            background-color: #F2F2F2;
-        }
-    }
-
-
-    
-    
+    }       
 }

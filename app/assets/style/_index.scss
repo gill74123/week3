@@ -23,7 +23,7 @@
             background-position: left;
         }
         .container{
-            height: 100%;
+            height: 100%;   /*須將其高度撐開與banner一樣align-items: center才會有效果*/
             flex-direction: row-reverse;
             align-items: center;
             text-align: right;

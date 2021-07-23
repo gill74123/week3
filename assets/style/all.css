@@ -79,13 +79,21 @@ body {
   line-height: 1.5; }
 
 .container {
-  max-width: 1110px;
-  margin: 0 auto; }
-  @media (max-width: 1140px) {
-    .container {
-      width: 100%;
-      padding: 0 15px; } }
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
+/*
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include PC-1140(){
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+*/
 /*header-start*/
 .header {
   padding: 0 4.5%;
@@ -291,8 +299,7 @@ body {
   height: 840px;
   background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  position: relative; }
+  background-repeat: no-repeat; }
   @media (max-width: 992px) {
     .index .banner {
       background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png); } }
@@ -300,20 +307,21 @@ body {
     .index .banner {
       height: 394px;
       background-position: left; } }
+  .index .banner .container {
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: right; }
   .index .banner .slogan {
-    text-align: right;
     font-size: 36px;
-    color: #650300;
-    position: absolute;
-    right: 20%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    color: #650300; }
     @media (max-width: 992px) {
       .index .banner .slogan {
-        margin-right: 4.5%;
-        right: 0;
         font-size: 20px; } }
     @media (max-width: 767px) {
       .index .banner .slogan {
@@ -684,11 +692,11 @@ body {
   .index .suggest .button:hover {
     background-color: #650300; }
 
-.product-OP {
+.optical {
   /*topnav*/
   /*banner*/
   /*prod-celluloid*/ }
-  .product-OP .topnav {
+  .optical .topnav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -696,10 +704,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
     color: #000; }
-    .product-OP .topnav li {
+    .optical .topnav li {
       width: 33.3%;
       border: 1px solid #DCDCDC; }
-  .product-OP .topnav-item {
+  .optical .topnav-item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -709,159 +717,159 @@ body {
     padding: 27px 0;
     border-bottom: 8px solid transparent; }
     @media (max-width: 992px) {
-      .product-OP .topnav-item {
+      .optical .topnav-item {
         padding: 14px 0; } }
     @media (max-width: 767px) {
-      .product-OP .topnav-item {
+      .optical .topnav-item {
         padding: 6px 0;
         border-bottom: 4px solid transparent; } }
-    .product-OP .topnav-item .icon {
+    .optical .topnav-item .icon {
       width: 48px;
       height: 48px;
       margin-right: 3%; }
       @media (max-width: 992px) {
-        .product-OP .topnav-item .icon {
+        .optical .topnav-item .icon {
           width: 32px;
           height: 32px; } }
       @media (max-width: 767px) {
-        .product-OP .topnav-item .icon {
+        .optical .topnav-item .icon {
           width: 16px;
           height: 16px; } }
-    .product-OP .topnav-item p {
+    .optical .topnav-item p {
       font-weight: 500;
       font-size: 32px; }
       @media (max-width: 992px) {
-        .product-OP .topnav-item p {
+        .optical .topnav-item p {
           font-size: 24px; } }
       @media (max-width: 767px) {
-        .product-OP .topnav-item p {
+        .optical .topnav-item p {
           font-size: 14px; } }
-  .product-OP .topnav-item:focus, .product-OP .topnav-item:hover {
+  .optical .topnav-item:focus, .optical .topnav-item:hover {
     border-bottom: 8px solid #AA0601; }
     @media (max-width: 767px) {
-      .product-OP .topnav-item:focus, .product-OP .topnav-item:hover {
+      .optical .topnav-item:focus, .optical .topnav-item:hover {
         border-bottom: 4px solid #AA0601; } }
-  .product-OP .banner-photo-left, .product-OP .banner-photo-right {
+  .optical .banner-photo-left, .optical .banner-photo-right {
     width: 50%;
     height: 304px;
     background-size: cover;
     background-position: center center; }
     @media (max-width: 767px) {
-      .product-OP .banner-photo-left, .product-OP .banner-photo-right {
+      .optical .banner-photo-left, .optical .banner-photo-right {
         height: 148px; } }
-  .product-OP .banner-photo-left {
+  .optical .banner-photo-left {
     background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-1.png); }
     @media (max-width: 992px) {
-      .product-OP .banner-photo-left {
+      .optical .banner-photo-left {
         background-image: url(../images/banner-1.jpg);
         background-position: center 70%; } }
-  .product-OP .banner-photo-right {
+  .optical .banner-photo-right {
     background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-2.png); }
     @media (max-width: 992px) {
-      .product-OP .banner-photo-right {
+      .optical .banner-photo-right {
         background-image: url(../images/banner-2.jpg); } }
-  .product-OP .prod-celluloid {
+  .optical .prod-celluloid {
     padding: 80px 0 160px 0; }
-    .product-OP .prod-celluloid .sectitle {
+    .optical .prod-celluloid .sectitle {
       margin-bottom: 40px;
       font-size: 32px;
       text-align: center; }
       @media (max-width: 992px) {
-        .product-OP .prod-celluloid .sectitle {
+        .optical .prod-celluloid .sectitle {
           margin-bottom: 32px;
           font-size: 24px; } }
       @media (max-width: 767px) {
-        .product-OP .prod-celluloid .sectitle {
+        .optical .prod-celluloid .sectitle {
           margin-bottom: 20px;
           font-size: 16px; } }
-      .product-OP .prod-celluloid .sectitle span {
+      .optical .prod-celluloid .sectitle span {
         font-weight: 500;
         font-size: 42px; }
         @media (max-width: 992px) {
-          .product-OP .prod-celluloid .sectitle span {
+          .optical .prod-celluloid .sectitle span {
             font-size: 32px; } }
         @media (max-width: 767px) {
-          .product-OP .prod-celluloid .sectitle span {
+          .optical .prod-celluloid .sectitle span {
             font-size: 20px; } }
-  .product-OP .prod-info {
+  .optical .prod-info {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
-  .product-OP .prod-item {
+  .optical .prod-item {
     margin-bottom: 104px;
     width: 23%; }
     @media (max-width: 992px) {
-      .product-OP .prod-item {
+      .optical .prod-item {
         margin-bottom: 72px;
         width: 48%; } }
     @media (max-width: 767px) {
-      .product-OP .prod-item {
+      .optical .prod-item {
         margin-bottom: 32px;
         width: 100%; } }
-    .product-OP .prod-item img {
+    .optical .prod-item img {
       width: 100%; }
   @media (max-width: 992px) {
-    .product-OP .hide-md {
+    .optical .hide-md {
       display: none; } }
   @media (max-width: 767px) {
-    .product-OP .hide-sm {
+    .optical .hide-sm {
       display: none; } }
-  .product-OP .prod-detail {
+  .optical .prod-detail {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     font-size: 24px; }
     @media (max-width: 992px) {
-      .product-OP .prod-detail {
+      .optical .prod-detail {
         line-height: 30px; } }
     @media (max-width: 767px) {
-      .product-OP .prod-detail {
+      .optical .prod-detail {
         font-size: 16px; } }
-    .product-OP .prod-detail .price {
+    .optical .prod-detail .price {
       font-weight: 500;
       color: #AA0601; }
-  .product-OP .colors-1, .product-OP .colors-2 {
+  .optical .colors-1, .optical .colors-2 {
     width: 24px;
     height: 24px;
     border-radius: 4px; }
     @media (max-width: 767px) {
-      .product-OP .colors-1, .product-OP .colors-2 {
+      .optical .colors-1, .optical .colors-2 {
         width: 16px;
         height: 16px; } }
-  .product-OP .colors-1 {
+  .optical .colors-1 {
     margin-right: 8px;
     background-color: #5F3E2D; }
     @media (max-width: 767px) {
-      .product-OP .colors-1 {
+      .optical .colors-1 {
         margin-right: 4px; } }
-  .product-OP .colors-2 {
+  .optical .colors-2 {
     background-color: #B75929; }
-  .product-OP .navbutton {
+  .optical .navbutton {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .product-OP .navbutton li {
+    .optical .navbutton li {
       border: 1px solid #555555; }
-    .product-OP .navbutton a {
+    .optical .navbutton a {
       padding: 12px 16px;
       font-size: 18px;
       color: #555555; }
       @media (max-width: 767px) {
-        .product-OP .navbutton a {
+        .optical .navbutton a {
           padding: 12px 15px;
           font-size: 16px; } }
-    .product-OP .navbutton a:hover {
+    .optical .navbutton a:hover {
       background-color: #000;
       color: #fff; }
     @media (max-width: 767px) {
-      .product-OP .navbutton .previouspage, .product-OP .navbutton .nextpage {
+      .optical .navbutton .previouspage, .optical .navbutton .nextpage {
         padding: 12px 10px; } }
-    .product-OP .navbutton .nextpage {
+    .optical .navbutton .nextpage {
       background-color: #F2F2F2; }
 
 /*# sourceMappingURL=all.css.map */

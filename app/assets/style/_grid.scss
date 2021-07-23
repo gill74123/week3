@@ -1,3 +1,9 @@
+@mixin PC-1140 {
+    @media (max-width: 1140px){
+        @content
+    }
+}
+
 @mixin pad{
     @media (max-width: 992px){
         @content

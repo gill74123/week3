@@ -1,0 +1,205 @@
+.optical{
+    /*topnav*/
+    .topnav{
+        justify-content: center;
+        align-items: center;
+        color: $black;
+        li{
+            width: 33.3%;
+            border: 1px solid #DCDCDC;
+        }
+    }
+    .topnav-item{
+        justify-content: center;
+        align-items: center;
+        padding: 27px 0;
+        border-bottom: 8px solid transparent;
+        @include pad(){
+            padding: 14px 0;
+        }
+        @include phone(){
+            padding: 6px 0;
+            border-bottom: 4px solid transparent;
+        }
+        .icon{
+            width: 48px;
+            height: 48px;
+            margin-right: 3%;
+            @include pad(){
+                width: 32px;
+                height: 32px;
+            }
+            @include phone(){
+                width: 16px;
+                height: 16px;
+            }
+        }
+        p{
+            font-weight: $medium-wght;
+            font-size: 32px;
+            @include pad(){
+                font-size: 24px;
+            }
+            @include phone(){
+                font-size: 14px;
+            }
+        }
+    }
+    .topnav-item:focus, .topnav-item:hover{
+        border-bottom: 8px solid $border-red;
+        @include phone(){
+            border-bottom: 4px solid $border-red;
+        }
+    }
+
+    /*banner*/
+    .banner-photo-left, .banner-photo-right{
+        width: 50%;
+        height: 304px;
+        background-size: cover;
+        background-position: center center;
+        @include phone(){
+            height: 148px;
+        }
+    }
+    .banner-photo-left{
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-1.png);
+        @include pad(){
+            background-image: url(../images/banner-1.jpg);
+            background-position: center 70%;
+        }
+    }
+    .banner-photo-right{
+        background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner-2.png);
+        @include pad(){
+            background-image: url(../images/banner-2.jpg);
+        }
+    }
+
+    /*prod-celluloid*/
+    .prod-celluloid{
+        padding: 80px 0 160px 0;
+        .sectitle{
+            margin-bottom: 40px;
+            font-size: 32px;
+            text-align: center;
+            @include pad(){
+                margin-bottom: 32px;
+                font-size: 24px;
+            }
+            @include phone(){
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+            span{
+                font-weight: $medium-wght;
+                font-size: 42px;
+                @include pad(){
+                    font-size: 32px;
+                }
+                @include phone(){
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .prod-info{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include pad(){
+            // height: 1895px;
+            // overflow: hidden;
+        }
+    }
+    .prod-item{
+        margin-bottom: 104px;
+        width: 23%;
+        @include pad(){
+            margin-bottom: 72px;
+            width: 48%;
+            // height: 25%;
+        }
+        @include phone(){
+            margin-bottom: 32px;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .hide-md{
+        @include pad(){
+            display: none;
+        }
+    }
+    .hide-sm{
+        @include phone(){
+            display: none;
+        }
+    }
+    .prod-detail{
+        justify-content: space-between;
+        font-size: 24px;
+        @include pad(){
+            line-height: 30px;
+        }
+        @include phone(){
+            font-size: 16px;
+        }
+        .price{
+            font-weight: $medium-wght;
+            color: $light-red;
+        }
+    }
+    .colors-1, .colors-2{
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        @include phone(){
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .colors-1{
+        margin-right: 8px;
+        background-color: #5F3E2D;
+        @include phone(){
+            margin-right: 4px;
+        }
+    }
+    .colors-2{
+        background-color: #B75929;
+    }
+    .navbutton{
+        justify-content: center;
+        align-items: center;
+        li{
+            border: 1px solid $light-gray;
+        }
+        a{
+            padding: 12px 16px;
+            font-size: 18px;
+            color: $light-gray;
+            @include phone(){
+                padding: 12px 15px;
+                font-size: 16px;
+            }
+        }
+        a:hover{
+            background-color: $black;
+            color: $white;
+        }
+        .previouspage, .nextpage{
+            @include phone(){
+                padding: 12px 10px;
+            }
+        }
+        .nextpage{
+            background-color: #F2F2F2;
+        }
+    }
+
+
+    
+    
+}

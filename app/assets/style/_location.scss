@@ -1,0 +1,131 @@
+.location{
+    .container{
+        padding-top: 96px;
+        padding-bottom: 160px;
+        @include pad(){
+            padding-top: 60px;
+            padding-bottom: 96px;
+        }
+        @include phone(){
+            padding-top: 28px;
+            padding-bottom: 56px;
+        }
+    }
+    .sectitle{
+        margin-bottom: 60px;
+        padding: 0 16px;
+        font-size: 48px;
+        font-weight: $bold-wght;
+        color: $black;
+        border-left: 8px solid $border-red;
+        @include pad(){
+            margin-bottom: 40px;
+            border-left: 4px solid $border-red;
+        }
+        @include phone(){
+            margin-bottom: 24px;
+            padding: 0 8px;
+            font-size: 28px;
+        }
+    }
+    .regionbox{
+        margin-bottom: 32px;
+        align-items: center;
+        @include pad(){
+            margin-bottom: 24px;
+        }
+        @include phone(){
+            margin-bottom: 20px;
+        }
+        label{
+            margin-right: 20px;
+            font-size: 24px;
+            @include pad(){
+                font-size: 16px;
+            }
+            @include phone(){
+                font-size: 14px;
+            }
+        }
+        select{
+            width: 25%;
+            padding: 10px 16px;
+            outline: 1px solid $border-gray;
+            @include pad(){
+                width: 33%;
+            }
+            @include phone(){
+                width: 75%;
+            }
+        }
+    }
+    .store{
+        flex-wrap: wrap;
+        @include pad(){
+            justify-content: space-between;
+        }
+        > li{
+            width: 31.5%;
+            margin-bottom: 32px;
+            border: 1px solid $border-gray;
+            @include pad(){
+                width: 48%;
+                margin-bottom: 20px;
+            }
+            @include phone(){
+                width: 100%;
+                margin-bottom: 16px;
+            }
+        }
+        > li:nth-child(1), li:nth-child(2), li:nth-child(4){
+            margin-right: 30px;
+            @include pad(){
+                margin-right: 0;
+            }
+        }
+    }
+    .thirdtitle{
+        padding: 12px 24px;
+        font-size: 24px;
+        border-top: 1px solid $border-gray;
+        border-bottom: 1px solid $border-gray;
+        @include pad(){
+            padding: 8px 24px;
+            font-size: 16px;
+        }
+    }
+    .store-info{
+        padding: 16px 24px;
+        li{
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        li:nth-child(3){
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        .icon{
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        p{
+            font-size: 20px;
+            @include pad(){
+                font-size: 14px;
+            }
+        }
+    }
+    .detail-btn{
+        width: 100%;
+        padding: 20px 0;
+        font-size: 19px;
+        text-align: center;
+        background-color: $black;
+        color: $white;
+        @include pad(){
+            font-size: 16px;
+        }
+    }
+
+}

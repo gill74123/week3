@@ -994,7 +994,9 @@ body {
         width: 100%; } }
     .sunglasses .prod-item img {
       width: 100%;
-      height: 224px; }
+      height: 224px;
+      -o-object-fit: cover;
+         object-fit: cover; }
   @media (max-width: 767px) {
     .sunglasses .hide-sm {
       display: none; } }
@@ -1054,5 +1056,134 @@ body {
           padding: 12px 10px; }
         .sunglasses .navbutton .nextpage {
           background-color: #F2F2F2; } }
+
+.location .container {
+  padding-top: 96px;
+  padding-bottom: 160px; }
+  @media (max-width: 992px) {
+    .location .container {
+      padding-top: 60px;
+      padding-bottom: 96px; } }
+  @media (max-width: 767px) {
+    .location .container {
+      padding-top: 28px;
+      padding-bottom: 56px; } }
+
+.location .sectitle {
+  margin-bottom: 60px;
+  padding: 0 16px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  border-left: 8px solid #AA0601; }
+  @media (max-width: 992px) {
+    .location .sectitle {
+      margin-bottom: 40px;
+      border-left: 4px solid #AA0601; } }
+  @media (max-width: 767px) {
+    .location .sectitle {
+      margin-bottom: 24px;
+      padding: 0 8px;
+      font-size: 28px; } }
+
+.location .regionbox {
+  margin-bottom: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 992px) {
+    .location .regionbox {
+      margin-bottom: 24px; } }
+  @media (max-width: 767px) {
+    .location .regionbox {
+      margin-bottom: 20px; } }
+  .location .regionbox label {
+    margin-right: 20px;
+    font-size: 24px; }
+    @media (max-width: 992px) {
+      .location .regionbox label {
+        font-size: 16px; } }
+    @media (max-width: 767px) {
+      .location .regionbox label {
+        font-size: 14px; } }
+  .location .regionbox select {
+    width: 25%;
+    padding: 10px 16px;
+    outline: 1px solid #CED4DA; }
+    @media (max-width: 992px) {
+      .location .regionbox select {
+        width: 33%; } }
+    @media (max-width: 767px) {
+      .location .regionbox select {
+        width: 75%; } }
+
+.location .store {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media (max-width: 992px) {
+    .location .store {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  .location .store > li {
+    width: 31.5%;
+    margin-bottom: 32px;
+    border: 1px solid #CED4DA; }
+    @media (max-width: 992px) {
+      .location .store > li {
+        width: 48%;
+        margin-bottom: 20px; } }
+    @media (max-width: 767px) {
+      .location .store > li {
+        width: 100%;
+        margin-bottom: 16px; } }
+  .location .store > li:nth-child(1), .location .store li:nth-child(2), .location .store li:nth-child(4) {
+    margin-right: 30px; }
+    @media (max-width: 992px) {
+      .location .store > li:nth-child(1), .location .store li:nth-child(2), .location .store li:nth-child(4) {
+        margin-right: 0; } }
+
+.location .thirdtitle {
+  padding: 12px 24px;
+  font-size: 24px;
+  border-top: 1px solid #CED4DA;
+  border-bottom: 1px solid #CED4DA; }
+  @media (max-width: 992px) {
+    .location .thirdtitle {
+      padding: 8px 24px;
+      font-size: 16px; } }
+
+.location .store-info {
+  padding: 16px 24px; }
+  .location .store-info li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 8px; }
+  .location .store-info li:nth-child(3) {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 16px; }
+  .location .store-info .icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px; }
+  .location .store-info p {
+    font-size: 20px; }
+    @media (max-width: 992px) {
+      .location .store-info p {
+        font-size: 14px; } }
+
+.location .detail-btn {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 19px;
+  text-align: center;
+  background-color: #000;
+  color: #fff; }
+  @media (max-width: 992px) {
+    .location .detail-btn {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=all.css.map */

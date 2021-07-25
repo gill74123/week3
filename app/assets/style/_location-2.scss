@@ -1,4 +1,4 @@
-.location{
+.location-2{
     .container{
         padding-top: 96px;
         padding-bottom: 160px;
@@ -60,37 +60,54 @@
         }
     }
     .store{
-        flex-wrap: wrap;
+        justify-content: space-between;
         @include pad(){
-            justify-content: space-between;
+            flex-direction: column;
         }
-        > li{
-            width: 31.5%;
+    }
+    .store-list{
+        width: 40%;
+        @include pad(){
             margin-bottom: 32px;
-            border: 1px solid $border-gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        @include phone(){
+            margin-bottom: 16px;
+            flex-direction: column;
+        }
+        img{
             @include pad(){
                 width: 48%;
-                margin-bottom: 20px;
             }
             @include phone(){
                 width: 100%;
-                margin-bottom: 16px;
             }
         }
-        > li:nth-child(1), li:nth-child(2), li:nth-child(4){
-            margin-right: 30px;
+        .store-infobox{
+            border: 1px solid $border-gray;
             @include pad(){
-                margin-right: 0;
+                width: 48%;
+                display: inline-block;
+            }
+            @include phone(){
+                width: 100%;
             }
         }
     }
     .thirdtitle{
         padding: 12px 24px;
         font-size: 24px;
+        font-weight: $bold-wght;
         border-bottom: 1px solid $border-gray;
         @include pad(){
-            padding: 8px 24px;
+            padding: 8px 16px;
             font-size: 16px;
+        }
+        @include phone(){
+            padding: 8px 24px;
         }
     }
     .store-info{
@@ -101,7 +118,7 @@
         }
         li:nth-child(3){
             align-items: flex-start;
-            margin-bottom: 0;
+            margin-bottom: 0px;
         }
         .icon{
             margin-right: 10px;
@@ -115,15 +132,11 @@
             }
         }
     }
-    .detail-btn{
-        width: 100%;
-        padding: 20px 0;
-        font-size: 19px;
-        text-align: center;
-        background-color: $black;
-        color: $white;
+    .map{
+        width: 57%;
         @include pad(){
-            font-size: 16px;
+            width: 100%;
         }
     }
+
 }

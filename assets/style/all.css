@@ -1178,6 +1178,9 @@ body {
     .location .detail-btn {
       font-size: 16px; } }
 
+.location .detail-btn:hover {
+  background-color: #650300; }
+
 .location-2 .container {
   padding-top: 96px;
   padding-bottom: 160px; }
@@ -1327,5 +1330,83 @@ body {
   @media (max-width: 992px) {
     .location-2 .map {
       width: 100%; } }
+
+.faq .container {
+  padding-top: 96px;
+  padding-bottom: 160px; }
+
+@media (max-width: 992px) {
+  .faq {
+    padding-top: 60px;
+    padding-bottom: 96px; } }
+
+@media (max-width: 767px) {
+  .faq {
+    padding-top: 28px;
+    padding-bottom: 56px; } }
+
+.faq .sectitle {
+  padding: 0 16px;
+  margin-bottom: 60px;
+  font-size: 48px;
+  font-size: 700;
+  border-left: 8px solid #AA0601; }
+  @media (max-width: 992px) {
+    .faq .sectitle {
+      margin-bottom: 40px;
+      border-left: 4px solid #AA0601; } }
+  @media (max-width: 767px) {
+    .faq .sectitle {
+      padding: 0 8px;
+      margin-bottom: 24px;
+      font-size: 28px; } }
+
+.faq .thirdtitle {
+  margin-bottom: 36px;
+  font-size: 32px;
+  font-weight: 700; }
+  @media (max-width: 992px) {
+    .faq .thirdtitle {
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .faq .thirdtitle {
+      margin-bottom: 24px;
+      font-size: 20px;
+      font-weight: 400; } }
+
+.faq .faq-info {
+  margin-bottom: 32px; }
+  @media (max-width: 992px) {
+    .faq .faq-info {
+      margin-bottom: 24px; } }
+  @media (max-width: 767px) {
+    .faq .faq-info {
+      margin-bottom: 20px; } }
+
+.faq .faq-info:nth-last-child(1) {
+  margin-bottom: 0; }
+
+.faq .fourthtitle {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700; }
+  @media (max-width: 767px) {
+    .faq .fourthtitle {
+      margin-bottom: 8px;
+      font-size: 16px; } }
+
+.faq .answer {
+  margin-left: 95px;
+  font-size: 16px; }
+  @media (max-width: 992px) {
+    .faq .answer {
+      margin-left: 60px; } }
+  @media (max-width: 767px) {
+    .faq .answer {
+      margin-left: 0;
+      font-size: 14px; } }
+  @media (max-width: 767px) {
+    .faq .answer p:nth-child(2) {
+      margin-bottom: 20px; } }
 
 /*# sourceMappingURL=all.css.map */

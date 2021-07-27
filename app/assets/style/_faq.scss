@@ -1,0 +1,80 @@
+.faq{
+    .container{
+        padding-top: 96px;
+        padding-bottom: 160px;
+    }
+    @include pad(){
+        padding-top: 60px;
+        padding-bottom: 96px;
+    }
+    @include phone(){
+        padding-top: 28px;
+        padding-bottom: 56px;
+    }
+    .sectitle{
+        padding: 0 16px;
+        margin-bottom: 60px;
+        font-size: 48px;
+        font-size: $bold-wght;
+        border-left: 8px solid $red-200;
+        @include pad(){
+            margin-bottom: 40px;
+            border-left: 4px solid $red-200;
+        }
+        @include phone(){
+            padding: 0 8px;
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+    }
+    .thirdtitle{
+        margin-bottom: 36px;
+        font-size: 32px;
+        font-weight: $bold-wght;
+        @include pad(){
+            margin-bottom: 32px;
+        }
+        @include phone(){
+            margin-bottom: 24px;
+            font-size: 20px;
+            font-weight: $regular-wght;
+        }
+    }
+    .faq-info{
+        margin-bottom: 32px;
+        @include pad(){
+            margin-bottom: 24px;
+        }
+        @include phone(){
+            margin-bottom: 20px;
+        }
+    }
+    .faq-info:nth-last-child(1){
+        margin-bottom: 0;
+    }
+    .fourthtitle{
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: $bold-wght;
+        @include phone(){
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+    }
+    .answer{
+        margin-left: 95px;
+        font-size: 16px;
+        @include pad(){
+            margin-left: 60px;
+        }
+        @include phone(){
+            margin-left: 0;
+            font-size: 14px;
+        }
+        p:nth-child(2){
+            @include phone(){
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

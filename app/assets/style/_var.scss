@@ -4,24 +4,20 @@ $medium-wght: 500;
 $bold-wght: 700;
 $black-wght: 900;
 
-/*pages color*/
-$primary-color: #AA0601;
-$secondary-color: #FBF2F2;
+/*color*/
+$red-100: #FBF2F2;
+$red-200: #AA0601;
+$red-300: #650300;
 
-/*text color*/
+$grey-100: #DCDCDC;
+$grey-200: #707070;
+$grey-300: #555555;
+$grey-400: #212529;
+
+$link: #FFAF60;
+
 $black: #000;
-$light-black: #212529;
 $white: #fff;
-$gray: #707070;
-$light-gray: #555555;
-$dark-red: #650300;
-$light-red: #AA0601;
 
-/*border color*/
-$border-white: #fff;
-$border-red: #AA0601;
-$border-gray: #CED4DA;
-
-/*hover color*/
-$link-hover: sandybrown;
-$buttom-hover: #650300;
+$primary-color: $red-200;
+$secondary-color: $red-100;

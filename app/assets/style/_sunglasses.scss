@@ -47,9 +47,9 @@
         }
     }
     .topnav-item:focus, .topnav-item:hover{
-        border-bottom: 8px solid $border-red;
+        border-bottom: 8px solid $red-200;
         @include phone(){
-            border-bottom: 4px solid $border-red;
+            border-bottom: 4px solid $red-200;
         }
     }
 
@@ -142,7 +142,7 @@
         }
         .price{
             font-weight: $medium-wght;
-            color: $light-red;
+            color: $red-200;
         }
     }
     .colors-1, .colors-2{
@@ -171,12 +171,12 @@
             justify-content: center;
             align-items: center;
             li{
-                border: 1px solid $light-gray;
+                border: 1px solid $grey-300;
             }
             a{
                 padding: 12px 15px;
                 font-size: 16px;
-                color: $light-gray;
+                color: $grey-300;
             }
             a:hover{
                 background-color: $black;

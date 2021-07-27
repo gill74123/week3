@@ -17,10 +17,10 @@
         font-size: 48px;
         font-weight: $bold-wght;
         color: $black;
-        border-left: 8px solid $border-red;
+        border-left: 8px solid $red-200;
         @include pad(){
             margin-bottom: 40px;
-            border-left: 4px solid $border-red;
+            border-left: 4px solid $red-200;
         }
         @include phone(){
             margin-bottom: 24px;
@@ -50,7 +50,7 @@
         select{
             width: 25%;
             padding: 10px 16px;
-            outline: 1px solid $border-gray;
+            outline: 1px solid $grey-100;
             @include pad(){
                 width: 33%;
             }
@@ -87,7 +87,7 @@
             }
         }
         .store-infobox{
-            border: 1px solid $border-gray;
+            border: 1px solid $grey-100;
             @include pad(){
                 width: 48%;
                 display: inline-block;
@@ -101,7 +101,7 @@
         padding: 12px 24px;
         font-size: 24px;
         font-weight: $bold-wght;
-        border-bottom: 1px solid $border-gray;
+        border-bottom: 1px solid $grey-100;
         @include pad(){
             padding: 8px 16px;
             font-size: 16px;

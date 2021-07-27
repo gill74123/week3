@@ -31,7 +31,7 @@
             @include phone(){
                 width: 50%;
                 text-align: center;
-                border: 1px solid $border-white;
+                border: 1px solid $white;
             }
             a{
                 padding: 30px 0;
@@ -47,7 +47,7 @@
                 }
             }
             a:hover{
-                color: $link-hover;
+                color: $link;
             }
         }
     }
@@ -69,7 +69,7 @@
         padding-bottom: 24px;
         margin-bottom: 32px;
         justify-content: space-between;
-        border-bottom: 1px solid $border-white;
+        border-bottom: 1px solid $white;
         @include pad(){
             padding-bottom: 20px;
             margin-bottom: 24px;
@@ -101,7 +101,7 @@
             }
         }
         .navbar a:hover{
-            color: $link-hover;
+            color: $link;
         }
     }
     img, a{
@@ -134,7 +134,7 @@
             }
         }
         a:hover{
-            color: $link-hover;
+            color: $link;
         }
     }
     .social{

@@ -17,10 +17,10 @@
         font-size: 48px;
         font-weight: $bold-wght;
         color: $black;
-        border-left: 8px solid $border-red;
+        border-left: 8px solid $red-200;
         @include pad(){
             margin-bottom: 40px;
-            border-left: 4px solid $border-red;
+            border-left: 4px solid $red-200;
         }
         @include phone(){
             margin-bottom: 24px;
@@ -50,7 +50,7 @@
         select{
             width: 25%;
             padding: 10px 16px;
-            outline: 1px solid $border-gray;
+            outline: 1px solid $grey-100;
             @include pad(){
                 width: 33%;
             }
@@ -67,7 +67,7 @@
         > li{
             width: 31.5%;
             margin-bottom: 32px;
-            border: 1px solid $border-gray;
+            border: 1px solid $grey-100;
             @include pad(){
                 width: 48%;
                 margin-bottom: 20px;
@@ -87,7 +87,7 @@
     .thirdtitle{
         padding: 12px 24px;
         font-size: 24px;
-        border-bottom: 1px solid $border-gray;
+        border-bottom: 1px solid $grey-100;
         @include pad(){
             padding: 8px 24px;
             font-size: 16px;
@@ -125,5 +125,8 @@
         @include pad(){
             font-size: 16px;
         }
+    }
+    .detail-btn:hover{
+        background-color: $red-300;
     }
 }

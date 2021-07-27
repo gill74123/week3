@@ -5,7 +5,7 @@
 
 /*共用屬性*/
 body{
-    font-family: 'Roboto', 'Noto Sans', sans-serif;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -13,16 +13,10 @@ body{
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-/*
-.container{
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 15px;
-    @include PC-1140(){
-        width: 100%;
-        padding: 0 15px;
+    @include pad(){
+        max-width: 720px;
+    }
+    @include phone(){
+        max-width: 375px;
     }
 }
-*/

@@ -1,10 +1,12 @@
 @charset "UTF-8";
+/*font weight*/
+/*color*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -61,11 +63,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-/*font weight*/
-/*pages color*/
-/*text color*/
-/*border color*/
-/*hover color*/
 /*功能型屬性*/
 .d-flex {
   display: -webkit-box;
@@ -74,7 +71,7 @@ img {
 
 /*共用屬性*/
 body {
-  font-family: 'Roboto', 'Noto Sans', sans-serif;
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
   font-weight: 400;
   line-height: 1.5; }
 
@@ -82,18 +79,13 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 720px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 375px; } }
 
-/*
-.container{
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 15px;
-    @include PC-1140(){
-        width: 100%;
-        padding: 0 15px;
-    }
-}
-*/
 /*header-start*/
 .header {
   padding: 0 4.5%;
@@ -154,7 +146,7 @@ body {
           padding: 8px 0px;
           margin-left: 0; } }
     .header .navbar .nav-item a:hover {
-      color: sandybrown; }
+      color: #FFAF60; }
 
 /*header-end*/
 /*footer-start*/
@@ -209,7 +201,7 @@ body {
           .footer .footer-nav .navbar a {
             margin-right: 40px; } }
     .footer .footer-nav .navbar a:hover {
-      color: sandybrown; }
+      color: #FFAF60; }
   .footer img, .footer a {
     display: inline-block;
     vertical-align: middle; }
@@ -234,7 +226,7 @@ body {
         margin-left: 4px;
         font-size: 16px; } }
   .footer .contactinfo a:hover {
-    color: sandybrown; }
+    color: #FFAF60; }
   .footer .social {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -320,6 +312,7 @@ body {
     text-align: right; }
   .index .banner .slogan {
     font-size: 36px;
+    font-weight: 500;
     color: #650300; }
     @media (max-width: 992px) {
       .index .banner .slogan {
@@ -1109,7 +1102,7 @@ body {
   .location .regionbox select {
     width: 25%;
     padding: 10px 16px;
-    outline: 1px solid #CED4DA; }
+    outline: 1px solid #DCDCDC; }
     @media (max-width: 992px) {
       .location .regionbox select {
         width: 33%; } }
@@ -1128,7 +1121,7 @@ body {
   .location .store > li {
     width: 31.5%;
     margin-bottom: 32px;
-    border: 1px solid #CED4DA; }
+    border: 1px solid #DCDCDC; }
     @media (max-width: 992px) {
       .location .store > li {
         width: 48%;
@@ -1146,7 +1139,7 @@ body {
 .location .thirdtitle {
   padding: 12px 24px;
   font-size: 24px;
-  border-bottom: 1px solid #CED4DA; }
+  border-bottom: 1px solid #DCDCDC; }
   @media (max-width: 992px) {
     .location .thirdtitle {
       padding: 8px 24px;
@@ -1237,7 +1230,7 @@ body {
   .location-2 .regionbox select {
     width: 25%;
     padding: 10px 16px;
-    outline: 1px solid #CED4DA; }
+    outline: 1px solid #DCDCDC; }
     @media (max-width: 992px) {
       .location-2 .regionbox select {
         width: 33%; } }
@@ -1285,7 +1278,7 @@ body {
     .location-2 .store-list img {
       width: 100%; } }
   .location-2 .store-list .store-infobox {
-    border: 1px solid #CED4DA; }
+    border: 1px solid #DCDCDC; }
     @media (max-width: 992px) {
       .location-2 .store-list .store-infobox {
         width: 48%;
@@ -1298,7 +1291,7 @@ body {
   padding: 12px 24px;
   font-size: 24px;
   font-weight: 700;
-  border-bottom: 1px solid #CED4DA; }
+  border-bottom: 1px solid #DCDCDC; }
   @media (max-width: 992px) {
     .location-2 .thirdtitle {
       padding: 8px 16px;

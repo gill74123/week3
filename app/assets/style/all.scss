@@ -1,13 +1,20 @@
-@import "var";
-@import "reset";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
-@import "grid";
-@import "base";
-@import "layout";
-@import "index";
-@import "optical";
-@import "sunglasses";
-@import "location";
-@import "location-2";
-@import "faq";
+
+@import "setting/variable";    //變數
+@import "setting/mixin";    //知識庫、斷點
+@import "setting/reset";
+
+@import "setting/base";   //全站式樣式
+@import "setting/grid";   //容器樣式
+@import "setting/utilities";    //工具性-通用類別樣式
+
+
+@import "layout/layout";
+@import "pages/index";
+@import "pages/optical";
+@import "pages/sunglasses";
+@import "pages/location";
+@import "pages/location-2";
+@import "pages/faq";
+@import "pages/blog";

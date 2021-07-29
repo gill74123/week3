@@ -21,15 +21,15 @@
             color: $white;
             @include pad(){
                 padding: 16px 32px 16px 0;
+                font-size: 16px;
             }
         }
         a:hover{
             color: $link;
         }
     }
-
-    /*blog-content*/
-    .blog-content{
+    /*blog-box*/
+    .blog-box{
         padding-top: 40px;
         padding-bottom: 160px;
         @include pad(){
@@ -102,6 +102,18 @@
             width: 100%;
         }
     }
+
+    .thirdtitle{
+        font-size: 32px;
+        color: $red-300;
+        @include pad(){
+            font-size: 20px;
+        }
+        @include phone(){
+            font-size: 16px;
+        }
+    }
+
     .blog-topic{
         margin-bottom: 24px;
         justify-content: space-between;
@@ -112,35 +124,26 @@
         @include phone(){
             margin-bottom: 0;
         }
-        .thirdtitle{
-            font-size: 20px;
-            font-weight: $medium-wght;
-            color: $black;
-            @include pad(){
-                font-size: 16px;
-            }
-            @include phone(){
-                font-size: 14px;
-            }
-            span{
-                font-size: 32px;
-                color: $red-300;
-                @include pad(){
-                    font-size: 20px;
-                }
-                @include phone(){
-                    font-size: 16px;
-                }
-            }
-        }
-        .date{
+    }
+    .forthtitle{
+        font-size: 20px;
+        font-weight: $medium-wght;
+        color: $black;
+        @include pad(){
             font-size: 16px;
-            font-weight: $medium-wght;
-            @include pad(){
-                font-size: 14px;
-            }
+        }
+        @include phone(){
+            font-size: 14px;
         }
     }
+    .date{
+        font-size: 16px;
+        font-weight: $medium-wght;
+        @include pad(){
+            font-size: 14px;
+        }
+    }
+    
     .blog-detail{    
         p{
             margin-bottom: 14px;
@@ -159,6 +162,9 @@
             font-weight: $black-wght;
             text-align: right;
             color: $red-300;
+            &:hover{
+                transform: scale(1.25);
+            }
         }
         .md-more{
             font-weight: $bold-wght;

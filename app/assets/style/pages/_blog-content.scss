@@ -60,6 +60,9 @@
             @include phone(){
                 line-height: 21px;
             }
+            &:hover{
+                color: $link;
+            }
         }
         .special-plan{
             color: $primary-color;

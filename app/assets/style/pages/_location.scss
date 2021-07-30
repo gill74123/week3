@@ -1,5 +1,5 @@
 .location{
-    .container{
+    .location-box{
         padding-top: 96px;
         padding-bottom: 160px;
         @include pad(){
@@ -50,7 +50,6 @@
         select{
             width: 25%;
             padding: 10px 16px;
-            outline: 1px solid $grey-100;
             @include pad(){
                 width: 33%;
             }
@@ -78,7 +77,7 @@
             }
         }
         > li:nth-child(1), li:nth-child(2), li:nth-child(4){
-            margin-right: 30px;
+            margin-right: 2.7%;
             @include pad(){
                 margin-right: 0;
             }

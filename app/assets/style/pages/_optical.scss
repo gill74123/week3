@@ -33,7 +33,7 @@
                 height: 16px;
             }
         }
-        span{
+        p{
             font-weight: $medium-wght;
             font-size: 32px;
             color: $black;
@@ -165,6 +165,8 @@
     .colors-2{
         background-color: #B75929;
     }
+
+    // navbutton
     .navbutton{
         justify-content: center;
         align-items: center;
@@ -191,6 +193,10 @@
         }
         .nextpage{
             background-color: #F2F2F2;
+        }
+        & .active{
+            background-color: $black;
+            color: $white;
         }
     }
 

@@ -143,19 +143,17 @@
 
     /*blog-content-info*/
     .blog-content-info{
-        li{
-            margin-bottom: 40px;
+        margin-bottom: 40px;
+        @include pad(){
+            margin-bottom: 24px;
+        }
+        &:nth-last-child(1){
+            margin-bottom: 48px;
             @include pad(){
-                margin-bottom: 24px;
+                margin-bottom: 28px;
             }
-            &:nth-last-child(1){
-                margin-bottom: 48px;
-                @include pad(){
-                    margin-bottom: 28px;
-                }
-                @include phone(){
-                    margin-bottom: 20px;
-                }
+            @include phone(){
+                margin-bottom: 20px;
             }
         }
         img{

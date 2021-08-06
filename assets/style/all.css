@@ -80,7 +80,7 @@ body {
       max-width: 720px; } }
   @media (max-width: 767px) {
     .container {
-      max-width: 495px; } }
+      max-width: 375px; } }
 
 /*工具類-通用類別樣式*/
 .d-flex {
@@ -725,15 +725,15 @@ body {
         .optical .topnav-item .icon {
           width: 16px;
           height: 16px; } }
-    .optical .topnav-item span {
+    .optical .topnav-item p {
       font-weight: 500;
       font-size: 32px;
       color: #000; }
       @media (max-width: 992px) {
-        .optical .topnav-item span {
+        .optical .topnav-item p {
           font-size: 24px; } }
       @media (max-width: 767px) {
-        .optical .topnav-item span {
+        .optical .topnav-item p {
           font-size: 14px; } }
   .optical .topnav-item:focus, .optical .topnav-item:hover {
     border-bottom: 8px solid #AA0601; }
@@ -862,6 +862,9 @@ body {
         padding: 12px 10px; } }
     .optical .navbutton .nextpage {
       background-color: #F2F2F2; }
+    .optical .navbutton .active {
+      background-color: #000;
+      color: #fff; }
 
 .sunglasses {
   /*topnav*/
@@ -1741,28 +1744,28 @@ body {
     @media (max-width: 992px) {
       .blog-content .date {
         font-size: 14px; } }
-  .blog-content .blog-content-info li {
+  .blog-content .blog-content-info {
     margin-bottom: 40px; }
     @media (max-width: 992px) {
-      .blog-content .blog-content-info li {
+      .blog-content .blog-content-info {
         margin-bottom: 24px; } }
-    .blog-content .blog-content-info li:nth-last-child(1) {
+    .blog-content .blog-content-info:nth-last-child(1) {
       margin-bottom: 48px; }
       @media (max-width: 992px) {
-        .blog-content .blog-content-info li:nth-last-child(1) {
+        .blog-content .blog-content-info:nth-last-child(1) {
           margin-bottom: 28px; } }
       @media (max-width: 767px) {
-        .blog-content .blog-content-info li:nth-last-child(1) {
+        .blog-content .blog-content-info:nth-last-child(1) {
           margin-bottom: 20px; } }
-  .blog-content .blog-content-info img {
-    width: 100%;
-    margin-bottom: 24px; }
-    @media (max-width: 992px) {
-      .blog-content .blog-content-info img {
-        margin-bottom: 16px; } }
-  .blog-content .blog-content-info p {
-    font-size: 20px;
-    color: #0A0A0A; }
+    .blog-content .blog-content-info img {
+      width: 100%;
+      margin-bottom: 24px; }
+      @media (max-width: 992px) {
+        .blog-content .blog-content-info img {
+          margin-bottom: 16px; } }
+    .blog-content .blog-content-info p {
+      font-size: 20px;
+      color: #0A0A0A; }
   .blog-content .share {
     padding-bottom: 20px;
     margin-bottom: 24px;
